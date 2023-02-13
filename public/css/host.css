@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap");
+
+@keyframes bgcolor {
+    0% {
+        background-color: #D2DDF1
+    }
+
+    30% {
+        background-color: #7388A7
+    }
+
+    60% {
+        background-color: #4A6487
+    }
+
+    90% {
+        background-color: #7388A7
+    }
+
+    100% {
+        background-color: #D2DDF1
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #d2ddf1;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #d2ddf1;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #4A6487;
+  }
+
+.backHeader {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 8vmin;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .backBtn button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+  }
+  
+  .backBtn img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .backBtn:hover {
+    filter: drop-shadow(0px 4px 3px gray);
+  }
+
+#title{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+#gamePinText{
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+#players{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    resize: none;
+    border-radius: 7px;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#start {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 200px;
+    border: 0.5px #4a6487 solid;
+    border-radius: 7px;
+    background-color: #d37552;
+    color: #ffff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#start:hover {
+    filter: drop-shadow(0px 4px 3px gray);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creator Mode | iZip</title>
+    <link rel="stylesheet" href="../../css/quizCreator.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="backHeader">
+      <div class="backBtn">
+        <a id="back" href="../"><img src="..\..\assets\backBtn.png" /></a>
+      </div>
+    </div>
+    <h1>Creator Mode</h1>
+
+    <div class="form-field">
+      <label id="quizTitle">Quiz Title : </label>
+      <input id="name" type="text" name="name" autofocus />
+    </div>
+    <br />
+    <br />
+    <div id="allQuestions">
+      <div id="question-field">
+        <div id="quest">
+          <label>Question 1: </label>
+          <input class="question" id="q1" type="text" autofocus />
+        </div>
+        <div id="answer1">
+          <label>Answer 1 : </label>
+          <input id="1a1" type="text" autofocus />
+          <label>Answer 2 : </label>
+          <input id="1a2" type="text" autofocus />
+        </div>
+        <div id="answer2">
+          <label>Answer 3 : </label>
+          <input id="1a3" type="text" autofocus />
+          <label>Answer 4 : </label>
+          <input id="1a4" type="text" autofocus />
+        </div>
+        <div id="correctAns">
+          <label>Correct Answer (1-4) :</label>
+          <input class="correct" id="correct1" type="number" autofocus />
+        </div>
+      </div>
+    </div>
+    <br />
+    <button class="Add" onclick="addQuestion()">Add Question</button>
+    <br />
+    <div id="form-field">
+      <button onclick="updateDatabase()">Create Quiz</button>
+      <button onclick="cancelQuiz()">
+        Abort Quiz Creation
+      </button>
+    </div>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/quizCreator.js"></script>
+  </body>
+</html>

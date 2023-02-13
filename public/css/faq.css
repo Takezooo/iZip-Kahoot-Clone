@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap");
+
+.faq-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.faq-container h1 {
+    display: flex;
+    justify-content: center;
+    color: #d37552;
+    font-size: 5vmin;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.faq-container hr {
+    width: 20vw;
+    margin-bottom: 3vmin;
+    border: 0.1vmin solid #d37552;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-faq img {
+    width: 500px;
+    height: 560px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.box .heading {
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.faqs {
+    padding: 10px 20px;
+}
+
+details {
+    font-size: 20px;
+    padding: 20px;
+    width: 500px;
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+details {
+    transition: height .5s ease;
+}
+
+details:not([open]) {
+    height: 2.25em;
+    line-height: 2.25em;
+}
+
+details[open] {
+    height: 10.75em;
+}
+

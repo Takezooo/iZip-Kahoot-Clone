@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student | iZip</title>
+    <link rel="stylesheet" href="../../css/playerGameView.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="stats">
+        <h4 id="nameText">Name: </h4>
+        <h4 id="rankText"></h4>
+    </div>
+    <h2 id="message"></h2>
+    <img id="resultGif" style="display:none">
+    <div class="btnContainer">
+        <div class="btnSet1">
+            <button onclick="answerSubmitted(1)" id="answer1" class="button"> A </button>
+            <button onclick="answerSubmitted(2)" id="answer2" class="button"> B </button>
+        </div>
+        <div class="btnSet2">
+            <button onclick="answerSubmitted(3)" id="answer3" class="button"> C</button>
+            <button onclick="answerSubmitted(4)" id="answer4" class="button"> D </button>
+        </div>
+    </div>
+    <h4 id="scoreText">Points: </h4>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/playerGame.js"></script>
+</body>
+
+</html>

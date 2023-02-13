@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teacher | iZip</title>
+    <link rel="stylesheet" href="../../css/hostGameView.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h2 id="timerText">TIME LEFT : <span id="num"> 20</span></h2>
+        <div class="squares">
+            <div class="square" id="square1"></div>
+            <div class="square" id="square2"></div>
+            <div class="square" id="square3"></div>
+            <div class="square" id="square4"></div>
+        </div>
+        <h2 id="question" class="questionNum">Question</h2>
+        <h4 id="playersAnswered">Players Answered: 0 / x</h4>
+        <h3 id="answer1">Answer</h3>
+        <br>
+        <h3 id="answer2">Answer</h3>
+        <br>
+        <h3 id="answer3">Answer</h3>
+        <br>
+        <h3 id="answer4">Answer</h3>
+        <br>
+        <button onclick="nextQuestion()" id="nextQButton">NEXT</button>
+    </div>
+
+    <h4 id="winnerTitle">TOP 5</h4>
+    <h3 id="winner1">1.</h3>
+    <h3 id="winner2">2.</h3>
+    <h3 id="winner3">3.</h3>
+    <h3 id="winner4">4.</h3>
+    <h3 id="winner5">5.</h3>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../js/libs/jqueryLibrary.js"></script>
+    <script src="../../js/libs/deparam.js"></script>
+    <script src="../../js/hostGame.js"></script>
+</body>
+
+</html>

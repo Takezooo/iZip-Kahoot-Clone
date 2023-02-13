@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap");
+
+body {
+    background-color: #D2DDF1;
+    overflow-x: hidden;
+    margin: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #d2ddf1;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #d2ddf1;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #4A6487;
+  }
+
+.main {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#answer1,
+#answer2,
+#answer3,
+#answer4 {
+    width: 800px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+#answer1 {
+    background-color: #7388A7;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 35px;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#answer2 {
+    background-color: #4A6487;
+    border: 1px solid black;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#answer3 {
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#answer4 {
+    background-color: #D37552;
+    border: 1px solid black;
+    margin: auto;
+    padding: 30px 20px;
+    height: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.squares {
+    display: none;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.square {
+    border: .5px solid black;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 70px;
+    height: 0px;
+    font-size: 20px;
+}
+
+#square1 {
+    background-color: #7388A7;
+}
+
+#square2 {
+    background-color: #4A6487;
+}
+
+#square3 {
+    background-color: #FFFFFF;
+}
+
+#square4 {
+    background-color: #D37552;
+}
+
+#nextQButton {
+    display: none;
+}
+
+#question {
+    margin-bottom: -10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#timerText {
+    color: #D37552;
+    margin-bottom: -50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+#num {
+    color: #D37552;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+#playersAnswered {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.questionNum {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+#nextQButton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 160px;
+    border: 0.5px #4a6487 solid;
+    border-radius: 7px;
+    background-color: #d37552;
+    color: #ffff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#nextQButton:hover {
+    filter: drop-shadow(0px 4px 3px gray);
+}
+
+#winner1 {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+
+#winner2 {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+
+#winner3 {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    display: none;
+}
+
+#winner4 {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    display: none;
+}
+
+#winner5 {
+    color: #4A6487;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    display: none;
+}
+
+#winnerTitle {
+    margin-top: -50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: #d37552;
+    display: none;
+}

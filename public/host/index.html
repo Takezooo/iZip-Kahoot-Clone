@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher | iZip</title>
+        <link rel = "stylesheet" href = "../css/host.css">
+    </head>
+    <body>
+        <div class='backHeader'>
+            <div class='backBtn'>
+              <button id = "cancel" onclick = "endGame()">
+                <img id="backMain" src="..\assets\backBtn.png" />
+              </button>
+            </div>
+          </div>
+        <h2 id = "title">Join iZip Quiz the Code: </h2>
+        <h1 id = "gamePinText"></h1>
+        <textarea style = "width: 700px; height: 500px;" readonly id = 'players'></textarea>
+        <br>
+        <button id = 'start' onclick = "startGame()">Start iZip</button>
+        <br>
+        <br>
+        <script src = "../socket.io/socket.io.js"></script>
+        <script src = "../js/libs/jqueryLibrary.js"></script>
+        <script src = "../js/libs//deparam.js"></script>
+        <script src = "../js/host.js"></script>
+    </body>
+</html>
+
